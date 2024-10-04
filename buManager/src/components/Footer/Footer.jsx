@@ -2,10 +2,10 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="shadow-md w-full fixed bottom-0 left-0 bg-neutral-800">
-      <div className="max-w-screen-xl mx-auto py-6 px-4 flex flex-col items-center">
-        <div className="flex flex-col md:flex-row justify-between items-center w-full mb-4">
-          <div className="flex space-x-6 mb-4 md:mb-0">
+    <footer className="shadow-md bg-neutral-800">
+      <div className="mx-auto py-6 px-8 items-center">
+        <div className="flex flex-col  justify-between items-center mb-4">
+          <div className="flex space-x-6 mb-4">
             <a
               href="https://facebook.com"
               target="_blank"
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-center text-sm text-gray-400 mt-4">
+        <div className="text-center text-gray-400 mt-4">
           <span>
             &copy; {new Date().getFullYear()} BuManager. Todos os direitos reservados.
           </span>

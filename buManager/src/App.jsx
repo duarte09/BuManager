@@ -12,17 +12,15 @@ const App = () => {
     setCurrentPath(path);
   };
 
-  const renderContent = () => {
     if (currentPath === '/login') {
       return <Login />;
     }
-    return <Home />;
-  };
+
 
   return (
     <div>
       <Header navigateTo={navigateTo} />
-      {renderContent()}
+      <Home />
       <Footer />
     </div>
   );

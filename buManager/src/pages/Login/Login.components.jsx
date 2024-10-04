@@ -68,8 +68,8 @@ export const Input = styled.input`
 
 export const Button = styled.button`
   border-radius: 20px;
-  border: 1px solid #1e90ff;
-  background-color: #1e90ff;
+  border: 1px solid #1e90ff; 
+  background-color: #1e90ff; 
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
@@ -111,9 +111,9 @@ export const OverlayContainer = styled.div`
 `;
 
 export const Overlay = styled.div`
-  background: #1e90ff;
-  background: -webkit-linear-gradient(to right, #00bfff, #1e90ff);
-  background: linear-gradient(to right, #00bfff, #1e90ff);
+  background: #3b82f6; 
+  background: -webkit-linear-gradient(to right, #3b82f6, #1e90ff); 
+  background: linear-gradient(to right, #3b82f6, #1e90ff); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
