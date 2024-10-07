@@ -1,11 +1,17 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
     <footer className="shadow-md bg-neutral-800">
       <div className="mx-auto py-6 px-8 items-center">
         <div className="flex flex-col  justify-between items-center mb-4">
-          <div className="flex space-x-6 mb-4">
+          <motion.div
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            transition={{ duration: 1.5 }}
+            className="flex space-x-6 mb-4"
+          >
             <a
               href="https://facebook.com"
               target="_blank"
@@ -38,9 +44,14 @@ const Footer = () => {
             >
               <FaLinkedin size={30} />
             </a>
-          </div>
+          </motion.div>
 
-          <div className="text-white flex flex-col items-center md:items-center">
+          <motion.div
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            transition={{ duration: 1 }}
+            className="text-white flex flex-col items-center md:items-center"
+          >
             <p className="mb-2 text-sm text-center">Fale conosco</p>
             <form className="flex flex-col md:flex-row">
               <input
@@ -52,13 +63,18 @@ const Footer = () => {
                 Enviar
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
 
         <div className="text-center text-gray-400 mt-4">
-          <span>
-            &copy; {new Date().getFullYear()} BuManager. Todos os direitos reservados.
-          </span>
+          <motion.span
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            transition={{ duration: 0.5 }}
+          >
+            &copy; {new Date().getFullYear()} BuManager. Todos os direitos
+            reservados.
+          </motion.span>
         </div>
       </div>
     </footer>
