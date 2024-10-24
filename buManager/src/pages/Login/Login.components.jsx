@@ -9,7 +9,17 @@ export const Container = styled.div`
   width: 850px;
   max-width: 100%;
   min-height: 550px;
+  /* Estilos adicionados para centralizar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Centralizar a div na tela */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
+
 
 export const SignUpContainer = styled.div`
   position: absolute;
