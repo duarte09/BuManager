@@ -225,9 +225,7 @@ const Produtos = () => {
               </p>
             </motion.div>
 
-            <motion.div
-              className="h-full flex items-center justify-center relative"
-            >
+            <motion.div className="h-full flex items-center justify-center relative">
               <motion.img
                 src={cafeImg}
                 alt="cafe"
@@ -251,13 +249,14 @@ const Produtos = () => {
                 Pagamentos apenas via PIX.
               </p>
 
-              <motion.button
-                className="bg-yellow-400 text-blue-900 font-semibold rounded-lg px-6 py-3 mt-4 shadow-lg"
+              <motion.a
+                href="/loja"
+                className="bg-yellow-400 text-blue-900 text-center font-semibold rounded-lg px-6 py-3 mt-4 shadow-lg inline-block" // Adicione inline-block para que o link se comporte como um botão
                 whileHover={{ scale: 1.1, backgroundColor: "#FCD34D" }}
                 transition={{ duration: 0.3 }}
               >
                 Compre agora
-              </motion.button>
+              </motion.a>
             </motion.div>
 
             <div className="absolute top-0 right-0 w-[150px] h-[150px] bg-yellow-400 rounded-full blur-3xl opacity-50"></div>
