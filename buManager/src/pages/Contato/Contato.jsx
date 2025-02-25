@@ -48,7 +48,7 @@ const Contato = () => {
         <ContactItem
           icon={<FiPhone className="text-blue-600 text-3xl" />}
           label="Telefone"
-          value="+55 (11) 1234-5678"
+          value="+55 (34) 99158-7017"
         />
         <ContactItem
           icon={<FiMail className="text-blue-600 text-3xl" />}
